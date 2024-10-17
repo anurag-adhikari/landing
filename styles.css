@@ -1,0 +1,254 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body, html {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Full-width Container */
+#vanta-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px 20px;
+  z-index: 1;
+  position: relative;
+  overflow-y: auto;
+}
+
+/* Inner content container to constrain width */
+.container-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Highlight Sentry Cyber */
+.highlight {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #66e0da; /* Teal Highlight */
+  text-transform: uppercase;
+  text-align: center; /* Center the title */
+}
+
+/* Coming Soon Message */
+.coming-soon {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #ffeb3b; /* Bright yellow to stand out */
+  text-align: center; /* Center the text */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center; /* Center the hero section */
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* Main Content Section */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left; /* Ensure the main content is left-aligned */
+}
+
+.main-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d1d1d1;
+  margin-bottom: 1.5rem;
+}
+
+/* Services Section */
+.services {
+  text-align: left; /* Force left alignment */
+  margin-top: 2rem;
+  max-width: 900px;
+  margin: 0; /* Remove auto centering */
+  display: block;
+  padding-left: 20px; /* Add padding to align away from the left edge */
+}
+
+.services h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left; /* Ensure heading is left-aligned */
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+  text-align: left; /* Ensure each list item is left-aligned */
+}
+
+.services ul li:before {
+  content: '•';
+  color: #66e0da;
+  position: absolute;
+  left: 0;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 900px;
+  margin: 0; /* Keep contact section aligned to the left */
+  margin-top: 2rem;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: left; /* Left-align contact information */
+}
+
+.contact a {
+  color: #66e0da; /* Brighter teal for better visibility */
+  text-decoration: underline;
+  font-weight: 600; /* Make the email link stand out */
+}
+
+.contact a:hover {
+  color: #ffffff; /* Change color on hover for emphasis */
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  color: #888;
+  text-align: left;
+  max-width: 900px;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  /* Adjust font sizes for tablets */
+  .highlight {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+
+  .services h3 {
+    font-size: 1.4rem;
+  }
+
+  .services ul li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust font sizes and layout for small tablets */
+  .highlight {
+    font-size: 2rem;
+  }
+
+  .hero h1 {
+    text-align: center;
+  }
+
+  .hero h2, .coming-soon {
+    text-align: center;
+  }
+
+  .main-content p {
+    font-size: 0.95rem;
+  }
+
+  .services {
+    text-align: left; /* Ensure left alignment on smaller devices */
+    padding-left: 10px; /* Adjust padding for smaller devices */
+  }
+
+  .services h3 {
+    font-size: 1.2rem;
+  }
+
+  .services ul li {
+    font-size: 0.9rem;
+    text-align: left; /* Ensure text is left-aligned */
+  }
+
+  .contact p {
+    text-align: left; /* Left-align contact information */
+  }
+
+  footer {
+    text-align: left; /* Ensure footer remains left-aligned */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust layout for mobile phones */
+  .highlight {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hero h1, .hero h2, .coming-soon {
+    text-align: center;
+  }
+
+  .main-content p {
+    font-size: 0.9rem;
+  }
+
+  .services {
+    text-align: left; /* Left-align for mobile */
+    padding-left: 10px; /* Ensure alignment for smaller screens */
+  }
+
+  .services h3 {
+    font-size: 1.1rem;
+  }
+
+  .services ul li {
+    font-size: 0.85rem;
+    padding-left: 0;
+    text-align: left; /* Explicit left alignment */
+  }
+
+  .contact p {
+    text-align: left;
+  }
+
+  footer {
+    text-align: left;
+  }
+}

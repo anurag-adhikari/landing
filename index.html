@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sentry Cyber - Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+<body>
 
-    <title>Frontend Mentor | Ping coming soon page</title>
+  <!-- Main Container with Vanta.js Background -->
+  <div id="vanta-bg" class="container">
+    
+    <!-- Hero Section with Highlighted Sentry Cyber -->
+    <section class="hero">
+      <h1><span class="highlight">Sentry Cyber</span></h1>
+      <h2>Your Digital Security Partners</h2>
+      <p class="coming-soon">We're coming soon!</p> <!-- Added Coming Soon Message -->
+    </section>
 
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    />
+    <!-- Main Content -->
+    <section class="main-content">
+      <p>At <strong>Sentry Cyber</strong>, we specialise in providing top-tier cybersecurity services for organisations using <strong>Google Workspace</strong>. With 91% of all cyberattacks starting with a phishing email targeting an unsuspecting victim, securing your Google Workspace is more critical than ever. As experts who've worked with Google Workspace since its inception in 2010, we have the in-depth knowledge required to protect your environment. Think of us as your sentry soldier, standing guard to ensure your organisation stays safe from cyber threats.</p>
+    </section>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <img src="./images/logo.svg" class="logo" alt="" srcset="" />
-      <h1>We are launching <span>soon!</span></h1>
-      <p>Subscribed and get notified</p>
+    <!-- Services Section -->
+    <section class="services">
+      <h3>Our Core Services</h3>
+      <ul>
+        <li>Google Workspace Security Hardening</li>
+        <li>Risk Assessment</li>
+        <li>Incident Response</li>
+        <li>Essential 8</li>
+        <li>SMB1001</li>
+        <li>ISO27001</li>
+        <li>Vulnerability Assessment</li>
+        <li>Penetration Testing</li>
+        <li>Phishing Simulation</li>
+      </ul>
+    </section>
 
-      <form action="#" method="POST">
-        <div class="d-flex flex-row flex-sm-column">
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@email.com"
-            />
-            <p class="invalid-text"></p>
-          </div>
-          <div class="form-group">
-            <button type="button" id="notify-me">Notify Me</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="container">
-      <img
-        src="./images/illustration-dashboard.png"
-        class="img-dashboard"
-        alt=""
-        srcset=""
-      />
-    </div>
+    <!-- Contact Section -->
+    <section class="contact">
+      <p>Email Us: <a href="mailto:enquiries@sentrycyber.co">enquiries@sentrycyber.co</a></p>
+    </section>
 
+    <!-- Footer -->
     <footer>
-      <div class="container">
-        <div class="flex-row">
-          <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-        </div>
-        <p>&copy;Copyright Ping. All rights reserved.</p>
-      </div>
+      <p>© 2024 Sentry Cyber. All Rights Reserved.</p>
     </footer>
 
-    <!-- JS -->
-    <script src="main.js"></script>
-  </body>
+  </div>
+
+  <!-- Vanta.js Script for Background -->
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x4ecdc4, /* Line color */
+      backgroundColor: 0x1e1e1e, /* Background color */
+      points: 10.00,
+      maxDistance: 20.00,
+      spacing: 18.00
+    });
+  </script>
+
+</body>
 </html>
